@@ -1,21 +1,12 @@
-JUST PASSING COMPANION v0.1
+JUST PASSING COMPANION v0.2
 
-This is the first prototype:
-- 4-digit PIN
-- Dashboard
-- Add/edit/delete pupils
-- Search pupils
-- Local browser storage
-- iPhone-friendly interface
-- £40/hour default
+New:
+- Lesson recording and automatic lesson numbers
+- Lesson history
+- Cash/bank-transfer/unpaid payment status
+- Outstanding balance
+- Traffic-light progress by skill
+- Passed-pupil archive
+- Dashboard today's lessons
 
-IMPORTANT:
-This prototype stores data only in the browser on the device. It is not yet a secure production database or a full backup system.
-
-For the next version:
-- Lesson records and automatic lesson numbers
-- Traffic-light progress tracker
-- Cash/bank-transfer payments
-- Built-in calendar
-- Passed pupil archive
-- Backup/restore
+Prototype warning: data is stored locally in the browser. Do not rely on this as the sole record for real pupil information until backup/security improvements are added.
