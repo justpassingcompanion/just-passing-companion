@@ -1,12 +1,12 @@
-JUST PASSING COMPANION v0.2
+JUST PASSING COMPANION v0.4
 
-New:
-- Lesson recording and automatic lesson numbers
-- Lesson history
-- Cash/bank-transfer/unpaid payment status
-- Outstanding balance
-- Traffic-light progress by skill
-- Passed-pupil archive
-- Dashboard today's lessons
+New in v0.4:
+- Monthly calendar view
+- Today screen
+- Quick post-lesson notes
+- Automatic test-readiness percentage
+- Progress overview
+- Improved mobile navigation
+- Existing backup/restore retained
 
-Prototype warning: data is stored locally in the browser. Do not rely on this as the sole record for real pupil information until backup/security improvements are added.
+The app migrates existing v0.3 local data where possible.
