@@ -109,8 +109,9 @@ function savePupil(){
   db.pupils.push(p);
   save();
   profile(p.id);
+  
 }
-}
+
 
 function profile(id){
   let p=db.pupils.find(x=>x.id===id),ls=p.lessons||[];
