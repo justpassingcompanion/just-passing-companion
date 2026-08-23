@@ -76,11 +76,40 @@ function addPupil(){
   <button class="primary" onclick="savePupil()">Save Pupil</button>`);
 }
 function savePupil(){
-  if(!name.value.trim())return alert('Enter a name.');
-  let p={id:Date.now().toString(),name:name.value.trim(),phone:phone.value,email:email.value,
-  price:+price.value||40,duration:+dur.value,notes:notes.value,balance:0,paidTotal:0,passed:false,
-  lessons:[],progress:Object.fromEntries(skills.map(s=>[s,'red']))};
-  db.pupils.push(p);save();profile(p.id);
+  const nameEl=document.getElementById('name');
+  const phoneEl=document.getElementById('phone');
+  const emailEl=document.getElementById('email');
+  const priceEl=document.getElementById('price');
+  const durEl=document.getElementById('dur');
+  const notesEl=document.getElementById('notes');
+
+  const pupilName=nameEl.value.trim();
+
+  if(!pupilName){
+    alert('Enter a name.');
+    nameEl.focus();
+    return;
+  }
+
+  const p={
+    id:Date.now().toString(),
+    name:pupilName,
+    phone:phoneEl.value.trim(),
+    email:emailEl.value.trim(),
+    price:Number(priceEl.value)||40,
+    duration:Number(durEl.value)||1,
+    notes:notesEl.value.trim(),
+    balance:0,
+    paidTotal:0,
+    passed:false,
+    lessons:[],
+    progress:Object.fromEntries(skills.map(s=>[s,'red']))
+  };
+
+  db.pupils.push(p);
+  save();
+  profile(p.id);
+}
 }
 
 function profile(id){
